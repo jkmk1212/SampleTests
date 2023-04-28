@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="chrome test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testNGClasses.CrossBrowserTesting">
+        <methods>
+          <include name="createAccountText"/>
+          <include name="loginButton"/>
+          <include name="welcomeMessage"/>
+          <include name="femaleRadioButton"/>
+          <include name="openBrowser"/>
+          <include name="verifyFBTitle"/>
+          <include name="logo"/>
+        </methods>
+      </class> <!-- testNGClasses.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- chrome test(failed) -->
+  <test thread-count="5" name="IE test(failed)">
+    <parameter name="browser" value="Internet Explorer"/>
+    <classes>
+      <class name="testNGClasses.CrossBrowserTesting">
+        <methods>
+          <include name="createAccountText"/>
+          <include name="loginButton"/>
+          <include name="welcomeMessage"/>
+          <include name="femaleRadioButton"/>
+          <include name="openBrowser"/>
+          <include name="verifyFBTitle"/>
+          <include name="logo"/>
+        </methods>
+      </class> <!-- testNGClasses.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- IE test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
